@@ -56,6 +56,6 @@ image_urls = google_image_search(query, max_images=700)  # 이미지 개수 증�
 print(f"[🔍] 크롤링된 이미지 개수: {len(image_urls)}")
 
 # 이미지 다운로드
-os.makedirs("images", exist_ok=True)
+os.makedirs("noh_images", exist_ok=True)
 for img_url in image_urls:
     download_image(img_url)
