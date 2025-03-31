@@ -7,8 +7,8 @@ from tqdm import tqdm
 MAIN_IMAGE_PATH = "노무현.jpg"  # 기준이 될 메인 이미지
 TILE_IMAGES_DIR = "noh_images"  # 작은 이미지 폴더
 OUTPUT_IMAGE_PATH = "noh_mosaic.jpg"  # 출력 이미지
-TILE_SIZE = 30  # 작은 타일 크기 (예: 30x30 픽셀)
-GRID_SIZE = 1000  # 모자이크의 가로/세로 타일 개수
+TILE_SIZE = input("각 조각의 크기(해상도)를 입력해주십시오.")  # 작은 타일 크기 
+GRID_SIZE = input("모자이크 그림의 크기(해상도)를 입력해주십시오.")  # 모자이크의 가로/세로 타일 개수
 
 # 1. 작은 이미지 로드 & 평균 색상 계산
 def load_tile_images(tile_dir):
